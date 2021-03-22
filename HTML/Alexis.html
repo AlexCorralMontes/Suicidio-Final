@@ -15,30 +15,90 @@
             src: url("walker_bot_ldr.ttf");
         }
 
-        *{
+        * {
             background-color: black;
         }
 
-        #ondas,#img {
-            border: 5px outset red;
+        #ondas {
             margin-top: 60px;
-            margin-left: 10px;
-            margin-right: 10px;
             align-items: center;
         }
 
-        h1 {
+        #img {
+            margin-top: 60px;
+            align-items: center;
+        }
+
+        p {
             color: blanchedalmond;
             align-items: center;
             font-family: "walker-bot";
-            font-size: 60px;
+            font-size: 40px;
+        }
+
+        .css-typing p {
+            border-right: .15em solid white;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .css-typing p:nth-child(1) {
+            width: 28em;
+            -webkit-animation: type 5s steps(40, end), blink .5s step-end infinite alternate;
+            animation: type 5s steps(40, end), blink .5s step-end infinite alternate;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+
+
+        @keyframes type {
+            0% {
+                width: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes type {
+            0% {
+                width: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @-webkit-keyframes blink {
+            50% {
+                border-color: transparent;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="col-xs-12 col-sm-6 col-md-8" align="center">
-        <h1>HOLA, SOY ALEXIS </h1>
+        <div align="center" class="css-typing">
+            <p>HOLA, SOY ALEXIS TU ASISTENTE VIRTUAL</p>
+        </div>
+
     </div>
     <div class="col-xs-12 col-sm-6 col-md-8" id="ondas" align="center">
         <img id="img" src="ondas-sonoras.gif">
